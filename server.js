@@ -13,7 +13,7 @@ import { dataToNewBoard } from './src/utils';
  ************************************************************/
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 // Serve application file depending on environment
