@@ -1,4 +1,4 @@
-Started from https://github.com/pheuter/essential-react
+Started from https://github.com/pheuter/essential-react, mainly for the base server/webpack components. No functionality for the assignment lies in this starter code.
 
 ## To Run
 ```
@@ -25,7 +25,7 @@ liveCells
 
 *Server* Express | Axios
 
-## Where is the code that Stephanie wrote?
+## Where is the assignement code?
 
-Search for the string `//Stephanie Curran Code`
+Search for the string `//Stephanie Curran Code` to find all the files relevant to the assignment.
 
