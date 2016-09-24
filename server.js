@@ -1,6 +1,7 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 const app = express();
-
+import { dataToNewBoard } from './src/utils';
 
 /************************************************************
  *
@@ -10,6 +11,10 @@ const app = express();
  *   - index.html
  *
  ************************************************************/
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 
 // Serve application file depending on environment
 app.get('/app.js', (req, res) => {
@@ -33,6 +38,7 @@ app.get('/style.css', (req, res) => {
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');
 });
+
 
 
 /*************************************************************
@@ -72,5 +78,12 @@ const server = app.listen(port, () => {
   const host = server.address().address;
   const port = server.address().port;
 
-  console.log('Essential React listening at http://%s:%s', host, port);
+  console.log('App listening at http://localhost:%s', port);
 });
+
+
+ app.post('/api/nextGen', (req, res)=>{
+    const { M, N, liveCells} = req.body;
+    var result = dataToNewBoard({ M, N, liveCells});
+    res.json(result);
+ });
