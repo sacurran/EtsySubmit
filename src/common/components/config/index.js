@@ -12,8 +12,10 @@ export default class ConfigBoard extends Component{
 
 	submit(){
 		const { onChange } = this.props;
-		const { M, N, liveCells} = this.state;
+		let { M, N, liveCells} = this.state;
+		liveCells = liveCells.filter(array => array[0] < M &&array[1] < N);
 		onChange({ M, N, liveCells});
+		this.setState({ M, N, liveCells});
 	}
 	reset(){
 		const { onChange } = this.props;
