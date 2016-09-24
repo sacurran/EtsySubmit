@@ -1,4 +1,4 @@
-// Stephanie Curran File
+//Stephanie Curran Code
 
 import React, {Component} from 'react';
 import {css, StyleSheet} from 'aphrodite';

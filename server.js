@@ -81,7 +81,7 @@ const server = app.listen(port, () => {
   console.log('App listening at http://localhost:%s', port);
 });
 
-
+//Stephanie Curran Code
  app.post('/api/nextGen', (req, res)=>{
     const { M, N, liveCells} = req.body;
     var result = dataToNewBoard({ M, N, liveCells});

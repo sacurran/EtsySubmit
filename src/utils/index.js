@@ -1,4 +1,4 @@
-// Stephanie Curran File
+//Stephanie Curran Code
 
 const makeBoard = (m,n)=>{
 	const array = new Array(m);

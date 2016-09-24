@@ -1,3 +1,5 @@
+//Stephanie Curran Code
+
 import React from "react";
 import Board from '../../common/components/board';
 import ConfigBoard from '../../common/components/config';
