@@ -24,3 +24,8 @@ liveCells
 *Client* React.js | Aphrodite | Bootstrap
 
 *Server* Express | Axios
+
+## Where is the code that Stephanie wrote?
+
+Search for the string `//Stephanie Curran Code`
+
