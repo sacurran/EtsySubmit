@@ -25,7 +25,7 @@ liveCells
 
 *Server* Express | Axios
 
-## Where is the assignement code?
+## Where is the assignment code?
 
 Search for the string `//Stephanie Curran Code` to find all the files relevant to the assignment.
 
