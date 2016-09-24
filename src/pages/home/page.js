@@ -55,6 +55,7 @@ export default class HomePage extends React.Component {
       <div className={css(styles.base)}>
         <h2>{"Stephanie's Etsy Submission"}</h2>
         <ConfigBoard M={M} N={N} liveCells={liveCells} onChange={(e)=>this.onChange(e)}/>
+        Click on a tile to toggle it.
         <Board board={board} onChange={(e)=>this.addCoord(e)}/> 
         <div role="button" className={css(styles.button)} onClick={x => this.nextGenClick()}>Next Generation</div>
       </div>
