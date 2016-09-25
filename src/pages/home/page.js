@@ -57,7 +57,7 @@ export default class HomePage extends React.Component {
         <ConfigBoard M={M} N={N} liveCells={liveCells} onChange={(e)=>this.onChange(e)}/>
         Click on a tile to toggle it.
         <Board board={board} onChange={(e)=>this.addCoord(e)}/> 
-        <div role="button" className={css(styles.button)} onClick={x => this.nextGenClick()}>Next Generation</div>
+        <div role="button" className={css(styles.button)} onClick={x => this.nextGenClick()}>Next Generation {'>>'}</div>
       </div>
     );
   }
@@ -80,11 +80,11 @@ const styles = StyleSheet.create({
       background: "#dc9a6c"
     },
     padding: '1em',
-    margin: '.5em',
+    marginTop: '1em',
     border: '.5px solid #ce6f2d',
     borderRadius: '15px',
     cursor: "pointer",
-    maxWidth: '10em',
+    maxWidth: '11em',
     userSelect: "none" 
   }
 });
