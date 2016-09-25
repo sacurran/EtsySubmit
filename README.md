@@ -19,6 +19,15 @@ liveCells
 }
 ```
 
+## Client
+
+I aligned the board and config right in order to allow for the expansion of the board.
+Assumption: when board is sized smaller than existing highlights, those highlights disappear when re-expanded again.
+
+Default Mode: What was included in the assignment as an example.
+
+Click the Next Generation button to call the API and update the board.
+
 ## Used Libraries
 
 *Client* React.js | Aphrodite | Bootstrap
