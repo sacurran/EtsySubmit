@@ -1,6 +1,6 @@
 Started from https://github.com/pheuter/essential-react, mainly for the base server/webpack components. No functionality for the assignment lies in this starter code.
 
-## To Run
+## To Run It
 ```
 npm install
 npm run server
